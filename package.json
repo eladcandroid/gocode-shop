@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve --hmr -o",
     "build": "ng build",
+    "deploy": "git checkout -b gh-pages && ng build --prod --output-path docs --base-href /gocode-shop/ && git commit -am \"update docs\" && git push -u origin gh-pages",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
