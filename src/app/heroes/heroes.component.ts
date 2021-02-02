@@ -17,5 +17,8 @@ export class HeroesComponent implements OnInit {
   onSelect(hero: Hero) {
     this.selectedHero = hero;
   }
+  onShout(msg: string) {
+    alert(msg);
+  }
   
 }
